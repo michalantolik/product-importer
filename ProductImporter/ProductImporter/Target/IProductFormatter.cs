@@ -1,6 +1,6 @@
-﻿using ProductImporter.Model;
+﻿using ProductImporterApp.Model;
 
-namespace ProductImporter.Target;
+namespace ProductImporterApp.Target;
 
 public interface IProductFormatter
 {

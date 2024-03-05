@@ -1,8 +1,8 @@
 ﻿using Microsoft.VisualBasic.FileIO;
-using ProductImporter.Model;
-using ProductImporter.Shared;
+using ProductImporterApp.Model;
+using ProductImporterApp.Shared;
 
-namespace ProductImporter.Source;
+namespace ProductImporterApp.Source;
 
 public class ProductSource : IProductSource
 {

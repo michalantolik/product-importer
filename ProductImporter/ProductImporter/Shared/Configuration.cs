@@ -1,4 +1,4 @@
-﻿namespace ProductImporter.Shared;
+﻿namespace ProductImporterApp.Shared;
 
 public class Configuration
 {

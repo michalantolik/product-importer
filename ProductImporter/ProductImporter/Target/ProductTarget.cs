@@ -1,7 +1,7 @@
-﻿using ProductImporter.Model;
-using ProductImporter.Shared;
+﻿using ProductImporterApp.Model;
+using ProductImporterApp.Shared;
 
-namespace ProductImporter.Target;
+namespace ProductImporterApp.Target;
 
 public class ProductTarget : IProductTarget
 {

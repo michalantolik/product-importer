@@ -1,7 +1,7 @@
-﻿using ProductImporter.Source;
-using ProductImporter.Target;
+﻿using ProductImporterApp.Source;
+using ProductImporterApp.Target;
 
-namespace ProductImporter;
+namespace ProductImporterApp;
 
 public class ProductImporter
 {

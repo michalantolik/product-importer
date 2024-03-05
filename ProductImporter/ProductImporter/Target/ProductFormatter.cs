@@ -1,8 +1,8 @@
-﻿using ProductImporter.Model;
+﻿using ProductImporterApp.Model;
 using System.Globalization;
 using System.Text;
 
-namespace ProductImporter.Target;
+namespace ProductImporterApp.Target;
 
 public class ProductFormatter : IProductFormatter
 {

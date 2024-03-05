@@ -1,4 +1,4 @@
-﻿namespace ProductImporter.Model;
+﻿namespace ProductImporterApp.Model;
 
 public class Product
 {

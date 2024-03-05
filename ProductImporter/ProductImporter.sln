@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductImporter", "ProductImporter\ProductImporter.csproj", "{5E8D6D84-96F7-4B48-B3FF-1CA52D896AE9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductImporterApp", "ProductImporter\ProductImporterApp.csproj", "{5E8D6D84-96F7-4B48-B3FF-1CA52D896AE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

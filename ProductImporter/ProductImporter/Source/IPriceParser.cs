@@ -1,6 +1,6 @@
-﻿using ProductImporter.Model;
+﻿using ProductImporterApp.Model;
 
-namespace ProductImporter.Source;
+namespace ProductImporterApp.Source;
 
 public interface IPriceParser
 {
