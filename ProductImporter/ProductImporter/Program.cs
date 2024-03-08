@@ -1,17 +1,26 @@
-﻿using ProductImporterApp;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+using ProductImporterApp;
 using ProductImporterApp.Model;
 using ProductImporterApp.Shared;
 using ProductImporterApp.Source;
 using ProductImporterApp.Target;
 
-var configuration = new Configuration();
 
-var priceParser = new PriceParser();
-var productSource = new ProductSource(configuration, priceParser);
+using var host = Host.CreateDefaultBuilder(args)
+    .ConfigureServices((context, services) =>
+    {
+        services.AddTransient<Configuration>();
 
-var productFormatter = new ProductFormatter();
-var productTarget = new ProductTarget(configuration, productFormatter);
+        services.AddTransient<IPriceParser, PriceParser>();
+        services.AddTransient<IProductSource, ProductSource>();
 
-var productImporter = new ProductImporter(productSource, productTarget);
+        services.AddTransient<IProductFormatter, ProductFormatter>();
+        services.AddTransient<IProductTarget, ProductTarget>();
 
+        services.AddTransient<ProductImporter>();
+    })
+    .Build();
+
+var productImporter = host.Services.GetRequiredService<ProductImporter>();
 productImporter.Run();
